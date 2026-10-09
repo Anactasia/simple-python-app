@@ -2,7 +2,7 @@ pipeline {
     // Агент (agent) указывает, где будет выполняться pipeline.
     // 'any' - означает запуск на любом доступном агенте.
     agent {
-        docker { image 'alpine:latest' }
+        docker { image 'python:3.13.7-alpine3.22' }
         }
 
     // Блок stages содержит последовательность этапов выполнения.
